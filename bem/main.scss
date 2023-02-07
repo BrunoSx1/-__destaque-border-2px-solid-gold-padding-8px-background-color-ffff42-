@@ -1,0 +1,39 @@
+$base-font-size: 16px;
+$base-line-height: 1.5;
+$base-font-family: sans-serif;
+
+body {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-family: $base-font-family;
+}
+
+.produtos {
+  max-width: 640px;
+  width: 100%;
+  margin: 56px auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-column-gap: 1%;
+}
+
+.produto {
+  &__imagem {
+    width: 100%;
+  }
+
+  &__nome {
+    font-size: 1.2em;
+    margin: 8px 0;
+  }
+
+  &__descricao {
+    color: gray;
+  }
+}
+.produto--destaque {
+  border: 2px solid gold;
+  padding: 8px;
+  background-color: #ffff42;
+}
+
